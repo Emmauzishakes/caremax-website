@@ -5,8 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { navLinks } from "./nav-links";
 import { siteConfig } from "@/lib/site-config";
+import { navLinks } from "./nav-links";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
