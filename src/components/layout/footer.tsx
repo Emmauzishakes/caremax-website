@@ -4,7 +4,11 @@ import { PageContainer } from "./page-container";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-slate-50">
+    <footer className="relative border-t bg-slate-950 text-slate-200">
+        {/* subtle background glow */}
+        <div className="pointer-events-none absolute inset-0 opacity-40">
+            <div className="absolute -top-40 left-1/2 h-100 w-100 -translate-x-1/2 rounded-full bg-teal-500 blur-[120px]" />
+        </div>
       <PageContainer>
         <div className="py-16">
           <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
